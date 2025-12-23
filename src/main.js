@@ -4,9 +4,6 @@ import "./style.css";
 import { config } from "./config.js";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-// Initialize Speed Insights (for performance monitoring)
-<SpeedInsights />;
-
 // Color theme classes
 const themes = {
   blue: {
@@ -113,6 +110,7 @@ const socialHTML = Object.entries(config.social)
 
 // Main app HTML
 document.querySelector("#app").innerHTML = `
+  <SpeedInsights />;
   <div class="min-h-screen ${
     theme.gradient
   } flex items-center justify-center px-4 py-12">
