@@ -2,6 +2,10 @@
 // Handles theme selection, DOM updates, and waitlist logic.
 import "./style.css";
 import { config } from "./config.js";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
+// Initialize Speed Insights (for performance monitoring)
+<SpeedInsights />;
 
 // Color theme classes
 const themes = {
