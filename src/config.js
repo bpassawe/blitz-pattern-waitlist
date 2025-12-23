@@ -2,10 +2,10 @@
 // Contains brand, theme, features, and social settings used throughout the app.
 export const config = {
   // Brand Settings
-  brandName: "Your SaaS",
-  tagline: "Something Amazing is Coming Soon",
+  brandName: "Blitz Pattern",
+  tagline: "Premium Templates for Fast-Moving Founders",
   description:
-    "The fastest way to validate your SaaS idea. Launch a professional waitlist page and start collecting emails today.",
+    "Professional, customizable web templates for SaaS founders and indie hackers. Launch your ideas faster with battle-tested templates.",
 
   // Theme Color (blue, purple, green, pink, orange)
   primaryColor: "purple",
@@ -14,34 +14,36 @@ export const config = {
   features: [
     {
       icon: "⚡",
-      title: "Deploy in 10 Minutes",
+      title: "Launch in Minutes",
       description:
-        "No design or coding skills needed. Customize and launch fast.",
+        "Deploy professional pages without starting from scratch.  Quick setup, instant results.",
     },
     {
       icon: "🎨",
-      title: "5 Premium Themes",
-      description: "Beautiful color schemes that match any brand instantly.",
+      title: "Beautiful by Default",
+      description:
+        "Premium templates that look great out of the box. Fully customizable to match your brand.",
     },
     {
-      icon: "📱",
-      title: "Mobile Perfect",
-      description: "Looks stunning on every device, automatically responsive.",
+      icon: "🔧",
+      title: "Zero Coding Required",
+      description:
+        "Simple configuration files. Change everything without touching code.",
     },
   ],
 
   // Social Links (optional - leave empty string to hide)
   social: {
-    x: "",
+    x: "https://x.com/blitzpattern",
     facebook: "",
     youtube: "",
     linkedin: "",
-    github: "",
+    github: "https://github.com/bpassawe",
   },
 
   // Call to Action
-  ctaButton: "Join the Waitlist",
-  successMessage: "🎉 You're in!  Check your email for next steps.",
+  ctaButton: "View Templates",
+  successMessage: "🎉 Thanks!  We'll notify you when new templates drop.",
 };
 
 // Template by Blitz Pattern - https://blitzpattern.com

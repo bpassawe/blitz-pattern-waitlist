@@ -197,10 +197,21 @@ document.querySelector("#app").innerHTML = `
       }
 
       <!-- Footer -->
-      <div class="text-center mt-16 text-gray-500 text-sm">
-        <p>&copy; ${new Date().getFullYear()} ${
-  config.brandName
-}. All rights reserved.</p>
+      <div class="text-center mt-16 space-y-4">
+        <div class="flex justify-center gap-4">
+          <a href="https://blitzpattern.gumroad.com" class="text-${
+            theme.text
+          } hover:underline font-semibold">
+            Browse Templates
+          </a>
+          <span class="text-gray-400">•</span>
+          <a href="https://github.com/bpassawe" class="text-gray-500 hover:text-gray-700">
+            GitHub
+          </a>
+        </div>
+        <p class="text-gray-500 text-sm">
+          &copy; ${new Date().getFullYear()} Blitz Pattern. All rights reserved.
+        </p>
       </div>
 
     </div>
@@ -218,22 +229,20 @@ form.addEventListener("submit", async function (e) {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
     timestamp: new Date().toISOString(),
+    source: "blitzpattern-landing",
   };
 
-  // TODO:  Customers will integrate their email service here
-  // Examples:  Mailchimp, ConvertKit, EmailOctopus, etc.
+  console.log("New subscriber:", formData);
 
-  // Simulate API call
-  await new Promise((resolve) => setTimeout(resolve, 500));
+  // TODO: Send to your email service
+  // For now, redirect to Gumroad store
 
   // Show success message
   form.classList.add("hidden");
   successMessage.classList.remove("hidden");
 
-  // Optional: Reset form after delay
+  // Redirect to your Gumroad store after 2 seconds
   setTimeout(() => {
-    form.reset();
-    form.classList.remove("hidden");
-    successMessage.classList.add("hidden");
-  }, 5000);
+    window.location.href = "https://blitzpattern.gumroad.com";
+  }, 2000);
 });
