@@ -110,7 +110,7 @@ const socialHTML = Object.entries(config.social)
 
 // Main app HTML
 document.querySelector("#app").innerHTML = `
-  <SpeedInsights />;
+  ${(<SpeedInsights />)}
   <div class="min-h-screen ${
     theme.gradient
   } flex items-center justify-center px-4 py-12">
