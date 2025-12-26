@@ -35,7 +35,7 @@ export const config = {
   // Social Links (optional - leave empty string to hide)
   social: {
     x: "https://x.com/blitzpattern",
-    facebook: "",
+    facebook: "https://facebook.com/blitzpattern",
     youtube: "",
     linkedin: "",
     github: "https://github.com/bpassawe",
